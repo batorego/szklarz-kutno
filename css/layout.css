@@ -1,0 +1,39 @@
+/* Add to existing layout.css */
+.company-description {
+    flex: 1;
+    padding: 2rem;
+    background-color: white;
+    text-align: center;
+}
+
+.company-description h1 {
+    margin-bottom: 1.5rem;
+    color: var(--primary-color);
+}
+
+.company-description p {
+    margin-bottom: 1.5rem;
+}
+
+.services-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    text-align: left;
+}
+
+.services-list li {
+    position: relative;
+    padding-left: 2rem;
+    margin-bottom: 0.75rem;
+    font-size: 1.1rem;
+}
+
+.services-list li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--accent-color);
+    font-weight: bold;
+}
